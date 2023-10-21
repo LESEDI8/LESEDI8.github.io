@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	
+ </head>
+ <body>
+  <!-- Add Bootstrap CSS and JavaScript links -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Header -->
+<header class="background-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <h2>Intombi <em>Nto!</em></h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <!--<span class="sr-only">(current)</span>-->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info.html">Info</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="Ubuntombi.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- image slider -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/9.jfif" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/1.1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/4.jfif" style="width:100%">
+  </div>
+
+  <!-- Add navigation buttons here -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+</div>
+
+<script src="script.js">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+var slideIndex = 0;
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+showSlides();
+
+</script>
+
+<h1 class="h1">Embracing Our Cultural Heritage</h1>
+<!--images-->
+    <div class="container">
+	
+        <div class="box">
+            <img class="image" src="images/2.jpg" alt="First Image">
+		 <div class="card">
+		  <input id="pic1" type="checkbox">
+			<h4 class="heading">What is Ubuntombi?</h4>
+            <p>In Zulu culture,the term "Ubuntombi" holds a special significance, representing virginity. It's a stage in the lives of Swati or Zulu girls, a period during which they decide how long to maintain their purity. 
+             It's essential to note that those who undergo virginity testing and maintain abstinence are referred to as "intombi," signifying young ladies who have transitioned from adolescence.</p>
+            <div class="content">
+		      <p>These young girls and women go through various significant ceremonies as they reach specific ages and life stages. These ceremonies include umemulo, umhlonyane, umkhehlo, and more. These rites of passage are integral to the Zulu cultural heritage and play a crucial role in transitioning girls into womanhood. Along with these, there are also well-known events such as the Reed Dance, where girls and young women from various communities come together to celebrate their cultural identity and demonstrate their respect for their King and nation.</p>
+		    <label for="pic1">Read less</label>
+			</div>
+			
+			<label for="pic1">Read more</label>
+		  </div>
+	</div>
+	        <div class="box">
+            <img class="image" src="images/girl.jpg" alt="Second Image">
+			<div class="card">
+            <h4 class="heading">Events and Celebrations</h4>
+			  <div class="text"><p>Umhloyane:In Zulu culture, the Umhlonyane ceremony, specifically for girls, holds significance as a rite of passage and a celebration . During this ceremony, girls who have reached a certain age, typically in their teenage years, participate in rituals that symbolize their maturity and readiness for adulthood.</p>
+</div>
+              <a class="read-more" href="info.html">Read More</a>
+			</div>
+        </div>
+		</div>
+		
+		<div class="container">
+        <div class="box">
+            <img class="image" src="images/lesedi 2.jpg"alt="First Image">
+			<div class="card">
+			<h4 class="heading">The Reed Dance</h4>
+            <div class="text"><p>The Reed Dance, also known as Umkhosi woMhlanga in Zulu, is an annual cultural event held in eSwatini (formerly known as Swaziland) and Kwa-Zulu Natal in Durban,South Africa. It is a traditional ceremony where young, unmarried women gather to celebrate their cultural heritage, promote solidarity,their purity and pay homage to the Queen Mother/King. The ceremony usually takes place in late August or early September.
+</p></div>
+            <a class="read-more" href="info.html">Read More</a>
+        </div>
+		</div>
+		
+        
+	
+        <div class="box">
+            <img class="image" src="images/5.jfif" alt="Second Image">
+			<div class="card">
+            <h4 class="heading">Garments and Attires</h4>
+			<div class="text"><p>Imvunulo is a type of traditional or cultural attire that is worn by various individuals for different purposes. It can be seen on participants of cultural ceremonies such as the Reed Dance, as well as on married women and those who wear it for recreational or cultural events. Notably, among the girls attending the Reed Dance, each garment holds its own distinct symbolism and meaning, reflecting the rich cultural significance embedded within the attire.</p></div>
+            <a class="read-more" href="Ubuntombi.html">Read More</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+</script>
+<!--nav bar color to change-->
+
+   
+
+     <footer>
+            <div class="footer-content">
+                <span><center>Copyright &copy; LESEDI M~Intombi Nto! 2023</center> </span>
+            </div>
+           
+        </footer>
+</body>
+</html>
+
+        
+        
+  
+    
+   
