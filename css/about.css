@@ -1,0 +1,334 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+	display:flex;
+	flex-direction:column;
+	background-image: url(../images/9.jfif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+ /* Header Style */
+
+
+header {
+	position: absolute;
+	z-index: 99999;
+	width: 100%;
+	height: 80px;
+	background-color: #232323;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+header .navbar {
+	padding: 17px 0px;
+}
+.background-header .navbar {
+	padding: 17px 0px;
+}
+.background-header {
+	top: 0;
+	position: fixed;
+	background-color: #fff!important;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+}
+.background-header .navbar-brand h2 {
+	color: #121212!important;
+}
+.background-header .navbar-nav a.nav-link {
+	color: #1e1e1e!important;
+}
+.background-header .navbar-nav .nav-link:hover,
+.background-header .navbar-nav .active>.nav-link,
+.background-header .navbar-nav .nav-link.active,
+.background-header .navbar-nav .nav-link.show,
+.background-header .navbar-nav .show>.nav-link {
+	color: #f33f3f!important;
+}
+.navbar .navbar-brand {
+	float: 	left;
+	margin-top: -12px;
+	outline: none;
+}
+.navbar .navbar-brand h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	-webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+.navbar .navbar-brand h2 em {
+	font-style: normal;
+	color: #f33f3f;
+}
+#navbarResponsive {
+	z-index: 999;
+}
+.navbar-collapse {
+	text-align: center;
+}
+.navbar .navbar-nav .nav-item {
+	margin: 0px 15px;
+}
+.navbar .navbar-nav a.nav-link {
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	color: #fff;
+	transition: all 0.5s;
+	margin-top: 5px;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show,
+.navbar .navbar-nav .show>.nav-link {
+	color: #fff;
+	padding-bottom: 25px;
+	border-bottom: 3px solid #f33f3f;
+}
+.navbar .navbar-toggler-icon {
+	background-image: none;
+}
+.navbar .navbar-toggler {
+	border-color: #fff;
+	background-color: #fff;	
+	height: 36px;
+	outline: none;
+	border-radius: 0px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+.navbar .navbar-toggler-icon:after {
+	content: '\f0c9';
+	color: #f33f3f;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: 'FontAwesome';
+}
+       
+
+		/*styling for the flex box images
+		*{
+			box-sizing:border-box;
+			}
+        .pink{
+            position: fixed;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+             background-attachment: fixed; 
+        }
+        .container{
+			width:1000px;
+			margin:auto;
+            margin-top:100px;
+			height:600px;
+			background-color:#CC3F67;
+			padding:4rem 5rem;
+			position:relative;
+		}
+		.textblock{
+          width:40%;
+		  height:50%;
+		  }
+		  .textblock.title{
+			  text-align:center;
+			  text-transform:uppercase;
+			  color:#777;
+			  margin-bottom:1.5rem;
+		  }
+		  .textblock p{
+			  margin-bottom:1.3rem;
+		  }
+		  a.btn{
+			  background-color: #f33f3f;
+	color: #fff;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: 300;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: inline-block;
+	transition: all 0.3s;
+			  *border:1px solid #000;
+			  color:#777;
+			  padding:1.2rem 2.2rem;
+			  margin-top:1.5rem;
+			  text-decoration:none;
+			  display:inline-block;*/
+		  
+		  .container img{
+			  position:absolute;
+			  top:16px;
+			  right:-15%;
+			  box-shadow:5px 4px 10px rgba(37,37,37,0.5);
+			  width:500px;
+		  }
+		  /* responsive for flex image
+		  @media only screen and ( max-width:768px)
+		  {
+			  .container{
+				  width:90%
+			  }
+			  .container.textblock {
+				  width:100%;
+			  }
+			  .container img{
+				  display:none;
+			  }
+			  
+		
+		/*footer*/
+.footer-content{
+	margin-top: 1500px;
+}
+.blue{
+    margin-top: 1000px;
+    width: 500px;
+    height: 500px;
+}
+
+/* Services */
+
+.services {
+	display: flex;
+    /* background: #1a6692; */
+	padding: 35px 0px;
+    width: 80%;
+    height: 100%; 
+    margin: 0 auto;
+}
+
+.services .service-item {
+	text-align: center;
+}
+
+.services .service-item .icon {
+	background-color: #f7f7f7;
+	padding: 40px ;
+}
+
+.services .service-item .icon i {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+	line-height: 100px;
+	background-color: #f33f3f;
+	color: #fff;
+	font-size: 32px;
+}
+
+.services .service-item .down-content {
+	background-color: #fff;
+	padding: 40px 30px;
+    height: 50%;
+
+}
+
+.services .service-item .down-content h4 {
+	font-size: 17px;
+	color: #1a6692;
+	margin-bottom: 20px;
+}
+
+.services .service-item .down-content p {
+	margin-bottom: 100%;
+    font-size: 17px;
+}
+
+
+
+
+.services .row {
+    display: flex;
+    flex-direction: row;
+    height:100%;
+  }
+  
+  .service-item {
+    display: flex;
+    margin: -10px;
+
+
+  }
+  
+  .service-item .icon {
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  
+  .service-item .down-content {
+    text-align: left;
+	height:50px;
+  }
+  
+  @media (max-width: 768px) {
+    .service-item {
+      flex-direction: column;
+    }
+  }
+  
+  
+.white {
+	display: flex;
+    background: #ffffff;
+	padding: 100px 0px;
+    width: 100%;
+    margin-top:5%;
+    justify-content: center; /* Align images to the center horizontally */
+}
+.white img{
+    margin:35px;
+    width:200px;
+    height: 80%;
+    position: relative;
+    border-radius: 15px;
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+    
+.white img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+
+.white img {
+    width: 350px; /* Default image width */
+    margin: 15px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.white img:hover {
+    transform: scale(1.1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .white {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center-align images vertically */
+    }
+
+    .white img {
+        width: 50%; /* Reduce image width on smaller screens */
+    }
+}
+
+
+.about{
+    background-color: #fff;
+	font-size:15px;
+	color:#f33f3f;
+}
